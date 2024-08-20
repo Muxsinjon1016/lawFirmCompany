@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        helpBg: "url('help.jpg')",
-        howCanHelp: "url('howCanHelp.jpg')",
-        contactBg: "url('contactBg.jpg')",
+        helpBg: "url('/help.jpg')",
+        howCanHelp: "url('/howCanHelp.jpg')",
+        contactBg: "url('/contactBg.jpg')",
       },
       borderRadius: {
         6: "6px",
