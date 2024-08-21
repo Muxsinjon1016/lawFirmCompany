@@ -1,28 +1,34 @@
 import React, { useState, useEffect, useRef } from "react";
 
 export const HowCanHelp = () => {
-  const [showCards, setShowCards] = useState(false);
-  const cardsRef = useRef(null);
+  const [visibleCards, setVisibleCards] = useState([]);
+  const cardsRefs = useRef([]);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setShowCards(true);
-          observer.disconnect(); // Stop observing once the animation is triggered
-        }
-      },
-      { threshold: 0.1 } // Trigger when 10% of the cards container is visible
-    );
+    const observers = cardsRefs.current.map((cardRef, index) => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setVisibleCards((prevVisibleCards) => [...prevVisibleCards, index]);
+            observer.disconnect(); // Stop observing once the animation is triggered
+          }
+        },
+        { threshold: 0.1 } // Trigger when 10% of the card is visible
+      );
 
-    if (cardsRef.current) {
-      observer.observe(cardsRef.current);
-    }
+      if (cardRef) {
+        observer.observe(cardRef);
+      }
+
+      return observer;
+    });
 
     return () => {
-      if (cardsRef.current) {
-        observer.unobserve(cardsRef.current);
-      }
+      observers.forEach((observer, index) => {
+        if (cardsRefs.current[index]) {
+          observer.unobserve(cardsRefs.current[index]);
+        }
+      });
     };
   }, []);
 
@@ -32,101 +38,63 @@ export const HowCanHelp = () => {
         <h2 className="text-white font-bold text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl lg:mb-14 mb-7 sm:mb-10 uppercase">
           How can we help?
         </h2>
-        <div
-          ref={cardsRef}
-          className={`flex items-center justify-evenly flex-wrap transition-transform duration-700 ${
-            showCards
-              ? "translate-y-0 opacity-100"
-              : "translate-y-full opacity-0"
-          }`}
-        >
-          {/* Card 1 */}
-          <div className="py-2 sm:py-4 sm:px-6 px-4 w-[250px] sm:w-[270px] lg:w-[300px] xl:w-[270px] h-[270px] sm:h-[370px] lg:h-[400px] xl:h-[420px] backdrop-blur-[3px] mb-6 border-2 rounded-20 border-gray-200">
-            <h3 className="text-xl text-center mb-3 text-white font-semibold">
-              DISPUTE RESOLUTION
-            </h3>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Litigation and arbitration practice
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Bankruptcy
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Protection of business reputation Criminal law practice
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Criminal law practice
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white">
-              • Appeal to the European Court of Human Rights
-            </p>
-          </div>
-
-          {/* Card 2 */}
-          <div className="py-2 sm:py-4 sm:px-6 px-4 w-[250px] sm:w-[270px] lg:w-[300px] xl:w-[270px] h-[270px] sm:h-[370px] lg:h-[400px] xl:h-[420px] backdrop-blur-[3px] mb-6 border-2 rounded-20 border-gray-200">
-            <h3 className="text-xl text-center mb-3 text-white font-semibold">
-              REGULATORY ISSUES
-            </h3>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Tax practice
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Interaction with regulatory authorities
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Antitrust law
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Customs law
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white">
-              • Business protection
-            </p>
-          </div>
-
-          {/* Card 3 */}
-          <div className="py-2 sm:py-4 sm:px-6 px-4 w-[250px] sm:w-[270px] lg:w-[300px] xl:w-[270px] h-[270px] sm:h-[370px] lg:h-[400px] xl:h-[420px] backdrop-blur-[3px] mb-6 border-2 rounded-20 border-gray-200">
-            <h3 className="text-xl text-center mb-3 text-white font-semibold">
-              TRANSACTIONS AND FINANCING
-            </h3>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Real estate and construction
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Corporate Law, Mergers and Acquisitions
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Banking and financial law
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Customs law
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white">
-              • Investment projects, securities
-            </p>
-          </div>
-
-          {/* Card 4 */}
-          <div className="py-2 sm:py-4 sm:px-6 px-4 w-[250px] sm:w-[270px] lg:w-[300px] xl:w-[270px] h-[270px] sm:h-[370px] lg:h-[400px] xl:h-[420px] backdrop-blur-[3px] mb-6 border-2 rounded-20 border-gray-200">
-            <h3 className="text-xl text-center mb-3 text-white font-semibold">
-              FOR PRIVATE CLIENTS
-            </h3>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Civil disputes
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Family law
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Inheritance
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
-              • Bankruptcy
-            </p>
-            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white">
-              • Defense in criminal cases
-            </p>
-          </div>
+        <div className="flex items-center justify-evenly flex-wrap">
+          {[
+            "DISPUTE RESOLUTION",
+            "REGULATORY ISSUES",
+            "TRANSACTIONS AND FINANCING",
+            "FOR PRIVATE CLIENTS",
+          ].map((title, index) => (
+            <div
+              key={index}
+              ref={(el) => (cardsRefs.current[index] = el)}
+              className={`py-2 sm:py-4 sm:px-6 px-4 w-[250px] sm:w-[270px] lg:w-[300px] xl:w-[270px] h-[270px] sm:h-[370px] lg:h-[400px] xl:h-[420px] backdrop-blur-[3px] mb-6 border-2 rounded-20 border-gray-200 transition-transform duration-700 ${
+                visibleCards.includes(index)
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-full opacity-0"
+              }`}
+            >
+              <h3 className="text-xl text-center mb-3 text-white font-semibold">
+                {title}
+              </h3>
+              <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
+                {/* Content based on title */}
+                {index === 0 && (
+                  <>
+                    • Litigation and arbitration practice <br />
+                    • Bankruptcy <br />
+                    • Protection of business reputation <br />
+                    • Criminal law practice <br />• Appeal to the European Court
+                    of Human Rights
+                  </>
+                )}
+                {index === 1 && (
+                  <>
+                    • Tax practice <br />
+                    • Interaction with regulatory authorities <br />
+                    • Antitrust law <br />
+                    • Customs law <br />• Business protection
+                  </>
+                )}
+                {index === 2 && (
+                  <>
+                    • Real estate and construction <br />
+                    • Corporate Law, Mergers and Acquisitions <br />
+                    • Banking and financial law <br />
+                    • Customs law <br />• Investment projects, securities
+                  </>
+                )}
+                {index === 3 && (
+                  <>
+                    • Civil disputes <br />
+                    • Family law <br />
+                    • Inheritance <br />
+                    • Bankruptcy <br />• Defense in criminal cases
+                  </>
+                )}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
