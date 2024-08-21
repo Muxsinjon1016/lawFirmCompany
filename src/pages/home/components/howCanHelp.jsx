@@ -41,90 +41,89 @@ export const HowCanHelp = () => {
           }`}
         >
           {/* Card 1 */}
-          <div className="py-2 sm:py-4 sm:px-6 px-4 w-[140px] sm:w-[170px] lg:w-[230px] xl:w-[270px] h-[220px] sm:h-[270px] lg:h-[330px] xl:h-[370px] backdrop-blur-[3px] mb-4 border-2 rounded-20 border-gray-200">
-            <h3 className="text-xs sm:text-sm lg:text-lg xl:text-xl text-center mb-3 text-white font-semibold">
+          <div className="py-2 sm:py-4 sm:px-6 px-4 w-[250px] sm:w-[270px] lg:w-[300px] xl:w-[270px] h-[270px] sm:h-[370px] lg:h-[400px] xl:h-[420px] backdrop-blur-[3px] mb-6 border-2 rounded-20 border-gray-200">
+            <h3 className="text-xl text-center mb-3 text-white font-semibold">
               DISPUTE RESOLUTION
             </h3>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Litigation and arbitration practice
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Bankruptcy
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Protection of business reputation Criminal law practice
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Criminal law practice
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white">
               • Appeal to the European Court of Human Rights
             </p>
           </div>
 
-          {/* Repeat similar structure for the other cards */}
           {/* Card 2 */}
-          <div className="py-2 sm:py-4 sm:px-6 px-4 w-[140px] sm:w-[170px] lg:w-[230px] xl:w-[270px] h-[220px] sm:h-[270px] lg:h-[330px] xl:h-[370px] backdrop-blur-[3px] mb-4 border-2 rounded-20 border-gray-200">
-            <h3 className="text-xs sm:text-sm lg:text-lg xl:text-xl text-center mb-3 text-white font-semibold">
+          <div className="py-2 sm:py-4 sm:px-6 px-4 w-[250px] sm:w-[270px] lg:w-[300px] xl:w-[270px] h-[270px] sm:h-[370px] lg:h-[400px] xl:h-[420px] backdrop-blur-[3px] mb-6 border-2 rounded-20 border-gray-200">
+            <h3 className="text-xl text-center mb-3 text-white font-semibold">
               REGULATORY ISSUES
             </h3>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Tax practice
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Interaction with regulatory authorities
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Antitrust law
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Customs law
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white">
               • Business protection
             </p>
           </div>
 
           {/* Card 3 */}
-          <div className="py-2 sm:py-4 sm:px-6 px-4 w-[140px] sm:w-[170px] lg:w-[230px] xl:w-[270px] h-[220px] sm:h-[270px] lg:h-[330px] xl:h-[370px] backdrop-blur-[3px] mb-4 border-2 rounded-20 border-gray-200">
-            <h3 className="text-xs sm:text-sm lg:text-lg xl:text-xl text-center mb-3 text-white font-semibold">
+          <div className="py-2 sm:py-4 sm:px-6 px-4 w-[250px] sm:w-[270px] lg:w-[300px] xl:w-[270px] h-[270px] sm:h-[370px] lg:h-[400px] xl:h-[420px] backdrop-blur-[3px] mb-6 border-2 rounded-20 border-gray-200">
+            <h3 className="text-xl text-center mb-3 text-white font-semibold">
               TRANSACTIONS AND FINANCING
             </h3>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Real estate and construction
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Corporate Law, Mergers and Acquisitions
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Banking and financial law
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Customs law
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white">
               • Investment projects, securities
             </p>
           </div>
 
           {/* Card 4 */}
-          <div className="py-2 sm:py-4 sm:px-6 px-4 w-[140px] sm:w-[170px] lg:w-[230px] xl:w-[270px] h-[220px] sm:h-[270px] lg:h-[330px] xl:h-[370px] backdrop-blur-[3px] mb-4 border-2 rounded-20 border-gray-200">
-            <h3 className="text-xs sm:text-sm lg:text-lg xl:text-xl text-center mb-3 text-white font-semibold">
+          <div className="py-2 sm:py-4 sm:px-6 px-4 w-[250px] sm:w-[270px] lg:w-[300px] xl:w-[270px] h-[270px] sm:h-[370px] lg:h-[400px] xl:h-[420px] backdrop-blur-[3px] mb-6 border-2 rounded-20 border-gray-200">
+            <h3 className="text-xl text-center mb-3 text-white font-semibold">
               FOR PRIVATE CLIENTS
             </h3>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Civil disputes
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Family law
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Inheritance
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white mb-2">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
               • Bankruptcy
             </p>
-            <p className="text-[7px] sm:text-[10px] lg:text-sm xl:text-base text-white">
+            <p className="text-[12px] sm:text-[17px] lg:text-lg text-white">
               • Defense in criminal cases
             </p>
           </div>

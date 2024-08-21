@@ -213,7 +213,7 @@ export const Header = () => {
         </DrawerHeader>
         <Divider />
         <List>
-          {["About us", "Services"].map((text) => (
+          {["About us", "Services", "News", "Publication"].map((text) => (
             <ListItem key={text} disablePadding>
               <ListItemButton
                 onClick={() =>
