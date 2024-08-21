@@ -108,8 +108,10 @@ export const Header = () => {
       <CustomAppBar
         sx={{
           backgroundColor: "#02050E",
-          borderRadius: " 0 0 20px 20px",
+          borderRadius: " 0 0 55px 55px",
           padding: "5px 0 5px 0",
+          borderBottom: "4px solid blue",
+          boxShadow: " 0 0 50px blue",
         }}
         position="fixed"
         open={open}
