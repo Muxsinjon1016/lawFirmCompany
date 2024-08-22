@@ -13,6 +13,10 @@ export default {
         aboutBg4: "url('/aboutBg4.jpg')",
         aboutBg5: "url('/aboutBg5.jpg')",
         aboutBg6: "url('/aboutBg6.jpg')",
+        servicesBg1: "url('/servicesBg1.svg')",
+        servicesBg2: "url('/servicesBg2.svg')",
+        servicesBg3: "url('/servicesBg3.svg')",
+        servicesBg4: "url('/servicesBg4.svg')",
       },
       borderRadius: {
         6: "6px",

@@ -21,7 +21,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import { useNavigate } from "react-router-dom";
 
-const drawerWidth = "100%";
+const drawerWidth = "100%"; // Adjusted to a fixed width for better handling
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
   ({ theme, open }) => ({
@@ -75,6 +75,7 @@ export const Header = () => {
 
   const handleNavigation = (path) => {
     navigate(path);
+    handleDrawerClose(); // Close the drawer after navigation
   };
 
   const handleAction = (text) => {
@@ -114,7 +115,7 @@ export const Header = () => {
           },
           padding: "5px 0 5px 0",
           borderBottom: "4px solid blue",
-          boxShadow: " 0 0 50px blue",
+          boxShadow: "0 0 50px blue",
         }}
         position="fixed"
         open={open}
@@ -218,21 +219,17 @@ export const Header = () => {
         </DrawerHeader>
         <Divider />
         <List>
-          {["About us", "Services", "News", "Publication", "FAQ"].map(
-            (text) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton
-                  onClick={() =>
-                    handleNavigation(
-                      `/${text.replace(/\s+/g, "").toLowerCase()}`
-                    )
-                  }
-                >
-                  <ListItemText primary={text} />
-                </ListItemButton>
-              </ListItem>
-            )
-          )}
+          {["About us", "Services"].map((text) => (
+            <ListItem key={text} disablePadding>
+              <ListItemButton
+                onClick={() =>
+                  handleNavigation(`/${text.replace(/\s+/g, "").toLowerCase()}`)
+                }
+              >
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          ))}
         </List>
         <Divider />
         <List>

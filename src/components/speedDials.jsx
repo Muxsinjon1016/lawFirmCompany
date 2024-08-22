@@ -38,7 +38,7 @@ export const SpeedDials = () => {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setOpenPopup(true);
-    }, 300000);
+    }, 900000);
 
     return () => clearInterval(interval);
   }, []);
