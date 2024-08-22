@@ -8,18 +8,19 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 const images = [
   {
     imgPath: "/slider1.jpg",
-    title: "Name of first worker",
-    description: "info about that worker",
+    title: "Sherzodbek Nosirov",
+    description: "Advakat yordamchisi",
+    workerImg: "bannerImg1.png",
   },
   {
     imgPath: "/slider2.jpg",
-    title: "Name of second worker",
-    description: "info about that worker",
+    title: "Together, we will achieve the results you deserve.",
+    // description: "info about that worker",
   },
   {
     imgPath: "/slider3.jpg",
-    title: "Name of third worker",
-    description: "info about that worker",
+    title: "We are more than just a law firm; we are your legal partner.",
+    // description: "info about that worker",
   },
 ];
 
@@ -92,11 +93,35 @@ export const Banner = () => {
                 objectFit: "cover",
               }}
             />
+            {step.workerImg && (
+              <Box
+                component="img"
+                src={step.workerImg}
+                alt="Worker"
+                sx={{
+                  position: "absolute",
+                  bottom: "0",
+                  right: {
+                    xs: "0",
+                    lg: "5%",
+                  },
+                  width: {
+                    xs: "220px",
+                    sm: "320px",
+                    md: "400px",
+                    lg: "500px",
+                    xl: "650px",
+                  },
+                  height: "auto",
+                  objectFit: "contain",
+                }}
+              />
+            )}
             <Box
               sx={{
                 position: "absolute",
-                bottom: "30px",
-                left: "50px",
+                bottom: "45%",
+                left: "15%",
                 color: "white",
                 backgroundColor: "rgba(0, 0, 0, 0.5)",
                 padding: "10px",
@@ -104,10 +129,37 @@ export const Banner = () => {
                 maxWidth: "80%",
               }}
             >
-              <Box sx={{ fontWeight: "bold", fontSize: "1.25rem" }}>
+              <Box
+                sx={{
+                  fontWeight: "bold",
+                  fontSize: {
+                    xs: "10px",
+                    sm: "22px",
+                    md: "30px",
+                    lg: "38px",
+                    xl: "40px",
+                  },
+                }}
+              >
                 {step.title}
               </Box>
-              <Box>{step.description}</Box>
+              <Box
+                sx={{
+                  marginTop: {
+                    xs: "5px",
+                    sm: "7px",
+                  },
+                  fontSize: {
+                    xs: "7px",
+                    sm: "15px",
+                    md: "22px",
+                    lg: "30px",
+                    xl: "32px",
+                  },
+                }}
+              >
+                {step.description}
+              </Box>
             </Box>
           </Box>
         ))}
