@@ -1,6 +1,8 @@
 import React from "react";
 import { Contact } from "../home/components/contact";
 import { AccordionFAQ } from "./components/accordion";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 export const Services = () => {
   return (
@@ -20,7 +22,7 @@ export const Services = () => {
               </p>
             </div>
             <ul className="flex items-center flex-wrap justify-evenly">
-              <li className="w-[270px] h-[270px] border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Corporate Law
                 </h3>
@@ -31,8 +33,14 @@ export const Services = () => {
                   you navigate the complexities of corporate law and ensure your
                   business operates smoothly.
                 </p>
+                <a
+                  className="absolute right-2 bottom-2"
+                  href="https://t.me/Muxsinjon_Maxsudovich"
+                >
+                  <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
+                </a>
               </li>
-              <li className="w-[270px] h-[270px] border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Family Law
                 </h3>
@@ -43,8 +51,14 @@ export const Services = () => {
                   case with sensitivity and care, prioritizing the best
                   interests of you and your family.
                 </p>
+                <a
+                  className="absolute right-2 bottom-2"
+                  href="https://t.me/Muxsinjon_Maxsudovich"
+                >
+                  <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
+                </a>
               </li>
-              <li className="w-[270px] h-[270px] border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Real Estate Law
                 </h3>
@@ -54,8 +68,14 @@ export const Services = () => {
                   handle contract drafting, dispute resolution, zoning issues,
                   and more to protect your real estate investments.
                 </p>
+                <a
+                  className="absolute right-2 bottom-2"
+                  href="https://t.me/Muxsinjon_Maxsudovich"
+                >
+                  <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
+                </a>
               </li>
-              <li className="w-[270px] h-[270px] border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Criminal Defense
                 </h3>
@@ -66,8 +86,14 @@ export const Services = () => {
                   fighting to protect your rights and achieve the best possible
                   outcome.
                 </p>
+                <a
+                  className="absolute right-2 bottom-2"
+                  href="https://t.me/Muxsinjon_Maxsudovich"
+                >
+                  <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
+                </a>
               </li>{" "}
-              <li className="w-[270px] h-[270px] border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Personal Injury Law
                 </h3>
@@ -78,8 +104,14 @@ export const Services = () => {
                   workplace injuries, medical malpractice, and more, ensuring
                   you receive the justice you deserve.
                 </p>
+                <a
+                  className="absolute right-2 bottom-2"
+                  href="https://t.me/Muxsinjon_Maxsudovich"
+                >
+                  <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
+                </a>
               </li>{" "}
-              <li className="w-[270px] h-[270px] border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Employment Law
                 </h3>
@@ -89,8 +121,14 @@ export const Services = () => {
                   claims, and employment contracts. Our goal is to ensure fair
                   treatment and legal compliance in the workplace.
                 </p>
+                <a
+                  className="absolute right-2 bottom-2"
+                  href="https://t.me/Muxsinjon_Maxsudovich"
+                >
+                  <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
+                </a>
               </li>
-              <li className="w-[270px] h-[270px] border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Immigration Law
                 </h3>
@@ -100,8 +138,14 @@ export const Services = () => {
                   applications, green cards, citizenship, and deportation
                   defense, helping you achieve your immigration goals.
                 </p>
+                <a
+                  className="absolute right-2 bottom-2"
+                  href="https://t.me/Muxsinjon_Maxsudovich"
+                >
+                  <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
+                </a>
               </li>
-              <li className="w-[270px] h-[270px] border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Estate Planning and Probate
                 </h3>
@@ -111,8 +155,14 @@ export const Services = () => {
                   proceedings to ensure your assets are protected and
                   distributed according to your wishes.
                 </p>
+                <a
+                  className="absolute right-2 bottom-2"
+                  href="https://t.me/Muxsinjon_Maxsudovich"
+                >
+                  <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
+                </a>
               </li>{" "}
-              <li className="w-[270px] h-[270px] border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Intellectual Property Law
                 </h3>
@@ -122,8 +172,14 @@ export const Services = () => {
                   copyrights, and licensing agreements, helping you safeguard
                   your intellectual assets.
                 </p>
+                <a
+                  className="absolute right-2 bottom-2"
+                  href="https://t.me/Muxsinjon_Maxsudovich"
+                >
+                  <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
+                </a>
               </li>{" "}
-              <li className="w-[270px] h-[270px] border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Litigation and Dispute Resolution
                 </h3>
@@ -133,6 +189,12 @@ export const Services = () => {
                   resolution methods like mediation and arbitration. We aim to
                   resolve your conflicts efficiently and effectively.
                 </p>
+                <a
+                  className="absolute right-2 bottom-2"
+                  href="https://t.me/Muxsinjon_Maxsudovich"
+                >
+                  <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
+                </a>
               </li>
             </ul>
           </div>
