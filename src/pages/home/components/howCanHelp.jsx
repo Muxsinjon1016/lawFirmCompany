@@ -10,10 +10,10 @@ export const HowCanHelp = () => {
         ([entry]) => {
           if (entry.isIntersecting) {
             setVisibleCards((prevVisibleCards) => [...prevVisibleCards, index]);
-            observer.disconnect(); // Stop observing once the animation is triggered
+            observer.disconnect();
           }
         },
-        { threshold: 0.1 } // Trigger when 10% of the card is visible
+        { threshold: 0.1 }
       );
 
       if (cardRef) {

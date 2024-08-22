@@ -7,6 +7,12 @@ export default {
         helpBg: "url('/help.jpg')",
         howCanHelp: "url('/howCanHelp.jpg')",
         contactBg: "url('/contactBg.jpg')",
+        aboutHero: "url('/aboutHero.jpg')",
+        aboutBg2: "url('/aboutBg2.jpg')",
+        aboutBg3: "url('/aboutBg3.jpg')",
+        aboutBg4: "url('/aboutBg4.jpg')",
+        aboutBg5: "url('/aboutBg5.jpg')",
+        aboutBg6: "url('/aboutBg6.jpg')",
       },
       borderRadius: {
         6: "6px",

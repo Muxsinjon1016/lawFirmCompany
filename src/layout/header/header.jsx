@@ -108,7 +108,10 @@ export const Header = () => {
       <CustomAppBar
         sx={{
           backgroundColor: "#02050E",
-          borderRadius: " 0 0 55px 55px",
+          borderRadius: {
+            xs: "0 0 25px 25px",
+            sm: "0 0 45px 45px",
+          },
           padding: "5px 0 5px 0",
           borderBottom: "4px solid blue",
           boxShadow: " 0 0 50px blue",
@@ -215,17 +218,21 @@ export const Header = () => {
         </DrawerHeader>
         <Divider />
         <List>
-          {["About us", "Services", "News", "Publication"].map((text) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton
-                onClick={() =>
-                  handleNavigation(`/${text.replace(/\s+/g, "").toLowerCase()}`)
-                }
-              >
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
+          {["About us", "Services", "News", "Publication", "FAQ"].map(
+            (text) => (
+              <ListItem key={text} disablePadding>
+                <ListItemButton
+                  onClick={() =>
+                    handleNavigation(
+                      `/${text.replace(/\s+/g, "").toLowerCase()}`
+                    )
+                  }
+                >
+                  <ListItemText primary={text} />
+                </ListItemButton>
+              </ListItem>
+            )
+          )}
         </List>
         <Divider />
         <List>
