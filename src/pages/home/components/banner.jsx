@@ -133,11 +133,11 @@ export const Banner = () => {
                 sx={{
                   fontWeight: "bold",
                   fontSize: {
-                    xs: "10px",
-                    sm: "22px",
-                    md: "30px",
-                    lg: "38px",
-                    xl: "40px",
+                    xs: "15px",
+                    sm: "27px",
+                    md: "33px",
+                    lg: "42px",
+                    xl: "47px",
                   },
                 }}
               >
