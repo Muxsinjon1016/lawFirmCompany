@@ -21,7 +21,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import { useNavigate } from "react-router-dom";
 
-const drawerWidth = "100%"; // Adjusted to a fixed width for better handling
+const drawerWidth = "100%";
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
   ({ theme, open }) => ({
@@ -75,7 +75,7 @@ export const Header = () => {
 
   const handleNavigation = (path) => {
     navigate(path);
-    handleDrawerClose(); // Close the drawer after navigation
+    handleDrawerClose();
   };
 
   const handleAction = (text) => {
@@ -90,7 +90,7 @@ export const Header = () => {
         window.open(`https://t.me/Muxsinjon_Maxsudovich`, "_blank");
         break;
       default:
-        window.location.href = `sms:${text}`; // Default action for SMS
+        window.location.href = `sms:${text}`;
         break;
     }
   };
@@ -108,14 +108,15 @@ export const Header = () => {
       <CssBaseline />
       <CustomAppBar
         sx={{
-          backgroundColor: "#02050E",
+          backgroundColor: "white",
           borderRadius: {
             xs: "0 0 25px 25px",
             sm: "0 0 45px 45px",
           },
           padding: "5px 0 5px 0",
-          borderBottom: "4px solid blue",
-          boxShadow: "0 0 50px blue",
+          borderBottom: "4px solid white",
+          boxShadow: "0 0 50px white",
+          color: "black",
         }}
         position="fixed"
         open={open}
@@ -158,8 +159,8 @@ export const Header = () => {
                     to="/"
                     className={({ isActive }) =>
                       isActive
-                        ? "text-lg md:text-2xl border-b-2 border-white transition-all duration-300"
-                        : "text-sm border-b-2 md:text-lg border-transparent hover:border-white transition-all duration-300"
+                        ? "text-lg md:text-2xl border-b-2 border-black transition-all duration-300"
+                        : "text-sm border-b-2 md:text-lg border-transparent hover:border-black transition-all duration-300"
                     }
                   >
                     Home
@@ -168,8 +169,8 @@ export const Header = () => {
                     to="/aboutus"
                     className={({ isActive }) =>
                       isActive
-                        ? "text-lg md:text-2xl border-b-2 border-white transition-all duration-300"
-                        : "text-sm border-b-2 md:text-lg border-transparent hover:border-white transition-all duration-300"
+                        ? "text-lg md:text-2xl border-b-2 border-black transition-all duration-300"
+                        : "text-sm border-b-2 md:text-lg border-transparent hover:border-black transition-all duration-300"
                     }
                   >
                     About us
@@ -178,8 +179,8 @@ export const Header = () => {
                     to="/services"
                     className={({ isActive }) =>
                       isActive
-                        ? "text-lg md:text-2xl border-b-2 border-white transition-all duration-300"
-                        : "text-sm border-b-2 md:text-lg border-transparent hover:border-white transition-all duration-300"
+                        ? "text-lg md:text-2xl border-b-2 border-black transition-all duration-300"
+                        : "text-sm border-b-2 md:text-lg border-transparent hover:border-black transition-all duration-300"
                     }
                   >
                     Services

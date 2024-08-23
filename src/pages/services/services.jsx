@@ -7,14 +7,14 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 export const Services = () => {
   return (
     <>
-      <div className="bg-[#09101A] pb-[50px]">
+      <div className="">
         <div>
           <div className="container">
             <div className="pt-[100px] md:pt-[120px]">
-              <h1 className="text-3xl sm:text-5xl sm:mb-7 md:text-7xl font-bold text-center mb-5 text-white">
+              <h1 className="text-3xl sm:text-5xl sm:mb-7 md:text-7xl font-bold text-center mb-5 ">
                 Our Services
               </h1>
-              <p className="text-white text-center md:text-xl max-w-[750px] mx-auto text-xs sm:text-sm mb-10">
+              <p className=" text-center md:text-xl max-w-[750px] mx-auto text-xs sm:text-sm mb-10">
                 At [Law Firm Name], we are committed to providing comprehensive
                 legal services to meet your needs. Our team of experienced
                 attorneys is dedicated to delivering top-notch representation
@@ -22,7 +22,7 @@ export const Services = () => {
               </p>
             </div>
             <ul className="flex items-center flex-wrap justify-evenly">
-              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] bg-purple-800 relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Corporate Law
                 </h3>
@@ -40,7 +40,7 @@ export const Services = () => {
                   <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
                 </a>
               </li>
-              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] bg-purple-800 relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Family Law
                 </h3>
@@ -58,7 +58,7 @@ export const Services = () => {
                   <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
                 </a>
               </li>
-              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] bg-purple-800 relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Real Estate Law
                 </h3>
@@ -75,7 +75,7 @@ export const Services = () => {
                   <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
                 </a>
               </li>
-              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] bg-purple-800 relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Criminal Defense
                 </h3>
@@ -93,7 +93,7 @@ export const Services = () => {
                   <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
                 </a>
               </li>{" "}
-              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] bg-purple-800 relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Personal Injury Law
                 </h3>
@@ -111,7 +111,7 @@ export const Services = () => {
                   <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
                 </a>
               </li>{" "}
-              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] bg-purple-800 relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Employment Law
                 </h3>
@@ -128,7 +128,7 @@ export const Services = () => {
                   <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
                 </a>
               </li>
-              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] bg-purple-800 relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Immigration Law
                 </h3>
@@ -145,7 +145,7 @@ export const Services = () => {
                   <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
                 </a>
               </li>
-              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] bg-purple-800 relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Estate Planning and Probate
                 </h3>
@@ -161,8 +161,8 @@ export const Services = () => {
                 >
                   <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
                 </a>
-              </li>{" "}
-              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              </li>
+              <li className="w-[270px] h-[300px] bg-purple-800 relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Intellectual Property Law
                 </h3>
@@ -179,7 +179,7 @@ export const Services = () => {
                   <MdOutlineArrowOutward className="p-1 bg-green-500 rounded-full text-white w-7 lg:w-10 transition-all duration-300 hover:rotate-45 ml-auto h-auto" />
                 </a>
               </li>{" "}
-              <li className="w-[270px] h-[300px] relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
+              <li className="w-[270px] h-[300px] bg-purple-800 relative border-2 rounded-12 mb-7 hover:scale-[1.1] transition-all duration-300 py-4 px-7">
                 <h3 className="text-white text-xl sm:text-2xl font-semibold text-center mb-2">
                   Litigation and Dispute Resolution
                 </h3>

@@ -33,9 +33,9 @@ export const HowCanHelp = () => {
   }, []);
 
   return (
-    <div className="bg-howCanHelp bg-cover">
+    <div className="md:bg-howCanHelp xs:bg-white bg-cover">
       <div className="container py-10 sm:py-16 md:py-20">
-        <h2 className="text-white font-bold text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl lg:mb-14 mb-7 sm:mb-10 uppercase">
+        <h2 className="md:text-white font-bold text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl lg:mb-14 mb-7 sm:mb-10 uppercase">
           How can we help?
         </h2>
         <div className="flex items-center justify-evenly flex-wrap">
@@ -54,10 +54,10 @@ export const HowCanHelp = () => {
                   : "translate-y-full opacity-0"
               }`}
             >
-              <h3 className="text-xl text-center mb-3 text-white font-semibold">
+              <h3 className="text-xl text-center mb-3 md:text-white font-semibold">
                 {title}
               </h3>
-              <p className="text-[12px] sm:text-[17px] lg:text-lg text-white mb-2">
+              <p className="text-[12px] sm:text-[17px] lg:text-lg md:text-white mb-2">
                 {/* Content based on title */}
                 {index === 0 && (
                   <>

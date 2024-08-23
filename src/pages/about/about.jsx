@@ -116,17 +116,17 @@ export const About = () => {
           </div>
         </div>
         <hr className="py-[2px] bg-gradient-to-r from-blue-700 via-white to-red-600 animate-gradient-x" />
-        <div className="py-28 xl:py-44 bg-no-repeat bg-cover bg-aboutBg5">
+        <div className="py-28 xl:py-44 bg-no-repeat bg-whi bg-cover md:bg-aboutBg5">
           <div className="container">
             <div className="pb-2">
-              <h3 className="text-white mb-1 text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl xl:mb-8 md:mb-5">
+              <h3 className="md:text-white mb-5 -mt-12 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl xl:mb-8 md:mb-5">
                 Why Choose Us?
               </h3>
-              <p className="text-white text-xs sm:text-xl lg:text-3xl lg:mb-5 lg:mt-8 mb-1">
+              <p className="md:text-white text-xs sm:text-xl lg:text-3xl lg:mb-5 lg:mt-8 mb-1">
                 What sets [Law Firm Name] apart is our unwavering commitment to
                 excellence. We are known for:
               </p>
-              <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl md:mb-5 backdrop-blur-[4px] py-2 px-4 rounded-20">
+              <p className="md:text-white text-sm sm:text-lg md:text-xl lg:text-2xl md:mb-5 backdrop-blur-[4px] py-2 px-4 rounded-20">
                 <b>- Personalized Service:</b> We take the time to understand
                 each client’s unique needs and tailor our services accordingly.
                 <br />
