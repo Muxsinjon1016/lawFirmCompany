@@ -116,7 +116,7 @@ export const About = () => {
           </div>
         </div>
         <hr className="py-[2px] bg-gradient-to-r from-blue-700 via-white to-red-600 animate-gradient-x" />
-        <div className="py-28 xl:py-44 bg-no-repeat bg-whi bg-cover md:bg-aboutBg5">
+        <div className="py-28 xl:py-44 bg-no-repeat bg-servicesBg1 bg-cover md:bg-aboutBg5">
           <div className="container">
             <div className="pb-2">
               <h3 className="md:text-white mb-5 -mt-12 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl xl:mb-8 md:mb-5">

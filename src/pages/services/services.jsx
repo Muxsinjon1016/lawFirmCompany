@@ -7,7 +7,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 export const Services = () => {
   return (
     <>
-      <div className="">
+      <div className="bg-servicesBg1">
         <div>
           <div className="container">
             <div className="pt-[100px] md:pt-[120px]">
